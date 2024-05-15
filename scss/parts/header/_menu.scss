@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  margin-left: auto;
+  gap: 34px;
+
+  & a {
+    font: {
+      size: 13px;
+      weight: 700;
+    }
+
+    line-height: 19px;
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 5px;
+
+    &.active {
+      border-bottom: 2px solid var(--color-greenBg);
+    }
+  }
+}

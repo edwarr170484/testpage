@@ -1,0 +1,122 @@
+:root {
+  --color-blackText: #000000;
+  --color-blackBg: #000000;
+  --color-lightBlackText: #212529;
+  --color-greenBg: #17bfbf;
+}
+
+.text_black {
+  color: var(--color-lightBlackText);
+}
+
+.padding-none {
+  padding: 0;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-blackText);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 77px;
+}
+
+.line, .hamburger span:after, .hamburger span:before, .hamburger span {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-blackBg);
+  border-radius: 3px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  width: 24px;
+  padding: 0;
+  margin: 0;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.hamburger span {
+  position: relative;
+  display: block;
+  display: none;
+}
+.hamburger span:before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: " ";
+  display: block;
+}
+.hamburger span:after {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  content: " ";
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .hamburger span {
+    display: block;
+  }
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logotype__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+.logotype__text p {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
+  gap: 34px;
+}
+.menu a {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #000;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 5px;
+}
+.menu a.active {
+  border-bottom: 2px solid var(--color-greenBg);
+}
+
+/*# sourceMappingURL=styles.css.map */

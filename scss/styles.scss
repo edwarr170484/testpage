@@ -1,0 +1,16 @@
+:root {
+  --color-blackText: #000000;
+  --color-blackBg: #000000;
+  --color-lightBlackText: #212529;
+  --color-greenBg: #17bfbf;
+}
+@import "./tools/breakpoints";
+@import "./parts/common/modifiers";
+
+@import "./parts/common/body";
+@import "./parts/common/grid";
+
+@import "./parts/header/header";
+@import "./parts/header/hamburger";
+@import "./parts/header/logotype";
+@import "./parts/header/menu";
