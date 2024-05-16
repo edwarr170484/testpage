@@ -1,9 +1,17 @@
-.text_black {
-  color: var(--color-lightBlackText);
+.text {
+  &_black {
+    color: var(--color-lightBlackText);
+  }
+
+  &_gray {
+    color: var(--color-grayText);
+  }
 }
+
 .padding-none {
   padding: 0;
 }
+
 .margin-none {
   margin: 0;
 }

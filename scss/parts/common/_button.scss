@@ -1,0 +1,22 @@
+.button {
+    background: var(--color-greenBg);
+    color: var(--color-whiteText);
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 31px 22px;
+    border: none;
+
+    font: {
+        size: 12px;
+        weight: 700;
+    }
+
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}

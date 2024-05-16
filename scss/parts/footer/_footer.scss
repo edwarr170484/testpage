@@ -2,3 +2,115 @@ footer {
     background: var(--color-footerBg);
     padding: 26px 81px;
 }
+
+.footer {
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 69px;
+        padding-bottom: 51px;
+    }
+
+    &__column {
+        flex-basis: 360px;
+
+        & h4 {
+            color: var(--color-whiteText);
+            text-transform: uppercase;
+
+            font: {
+                size: 16px;
+                weight: 700;
+            }
+
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__addresses {
+        display: flex;
+        gap: 44px;
+
+        padding: {
+            top: 10px;
+            bottom: 25px;
+        }
+    }
+
+    &__address {
+        font: {
+            size: 16px;
+        }
+
+        line-height: 24px;
+        color: var(--color-grayText);
+
+        & h5 {
+            font: {
+                weight: 600;
+                size: 16px;
+            }
+
+            color: var(--color-whiteText);
+        }
+
+        & a {
+            color: var(--color-grayText);
+        }
+    }
+
+    &__blog {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        color: var(--color-whiteText);
+
+        font: {
+            size: 17px;
+        }
+
+        line-height: 25px;
+
+        & h5 {
+            font-weight: 400;
+        }
+    }
+
+    &__blogdate {
+        font: {
+            size: 12px;
+        }
+
+        line-height: 18px;
+
+        color: var(--color-grayText);
+        padding-left: 17px;
+        background: url('../images/arrow.png') 0 1px no-repeat;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__copyright {
+        text-align: center;
+        color: var(--color-grayText);
+
+        font: {
+            size: 14px;
+        }
+
+        line-height: 21px;
+
+        & a {
+            text-decoration: underline;
+            color: inherit;
+        }
+    }
+}

@@ -5,6 +5,9 @@
   --color-lightBlackText: #212529;
   --color-footerBg: #303030;
   --color-greenBg: #17bfbf;
+  --color-grayText: #8C8C8C;
+  --color-whiteText: #ffffff;
+  --color-grayBorder: #5A5A5A;
 }
 
 @import "./tools/breakpoints";
@@ -21,3 +24,5 @@
 @import "./parts/main/gallery";
 @import "./parts/main/panes";
 @import "./parts/footer/footer";
+@import "./parts/footer/form";
+@import "./parts/common/button";

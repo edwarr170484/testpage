@@ -5,10 +5,16 @@
   --color-lightBlackText: #212529;
   --color-footerBg: #303030;
   --color-greenBg: #17bfbf;
+  --color-grayText: #8C8C8C;
+  --color-whiteText: #ffffff;
+  --color-grayBorder: #5A5A5A;
 }
 
 .text_black {
   color: var(--color-lightBlackText);
+}
+.text_gray {
+  color: var(--color-grayText);
 }
 
 .padding-none {
@@ -232,6 +238,119 @@ header {
 footer {
   background: var(--color-footerBg);
   padding: 26px 81px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 69px;
+  padding-bottom: 51px;
+}
+.footer__column {
+  flex-basis: 360px;
+}
+.footer__column h4 {
+  color: var(--color-whiteText);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.footer__addresses {
+  display: flex;
+  gap: 44px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.footer__address {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grayText);
+}
+.footer__address h5 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-whiteText);
+}
+.footer__address a {
+  color: var(--color-grayText);
+}
+.footer__blog {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  color: var(--color-whiteText);
+  font-size: 17px;
+  line-height: 25px;
+}
+.footer__blog h5 {
+  font-weight: 400;
+}
+.footer__blogdate {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-grayText);
+  padding-left: 17px;
+  background: url("../images/arrow.png") 0 1px no-repeat;
+}
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.footer__copyright {
+  text-align: center;
+  color: var(--color-grayText);
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer__copyright a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.form__control {
+  border: 2px solid var(--color-grayBorder);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-whiteText);
+  padding: 12px 20px;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form__control_error {
+  background: url("../images/dots.png") calc(100% - 23px) center no-repeat;
+}
+.form__control:focus {
+  outline: none;
+}
+
+textarea.form__control {
+  height: 80px;
+}
+
+.button {
+  background: var(--color-greenBg);
+  color: var(--color-whiteText);
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 31px 22px;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
