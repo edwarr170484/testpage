@@ -1,9 +1,12 @@
 :root {
   --color-blackText: #000000;
   --color-blackBg: #000000;
+  --color-tabsText: #6E6E6E;
   --color-lightBlackText: #212529;
+  --color-footerBg: #303030;
   --color-greenBg: #17bfbf;
 }
+
 @import "./tools/breakpoints";
 @import "./parts/common/modifiers";
 
@@ -14,3 +17,7 @@
 @import "./parts/header/hamburger";
 @import "./parts/header/logotype";
 @import "./parts/header/menu";
+@import "./parts/main/tabs";
+@import "./parts/main/gallery";
+@import "./parts/main/panes";
+@import "./parts/footer/footer";

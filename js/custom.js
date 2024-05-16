@@ -1,14 +1,18 @@
-let menu_items = [...document.getElementsByClassName("menu__item")];
-
-if (menu_items) {
-  menu_items.forEach((item, index, items) => {
-    console.log(items);
-
-    item.addEventListener("click", function (event) {
-      items.forEach((item) => {
-        item.classList.remove("active");
+function addClickEvent(elements) {
+  if (elements) {
+    elements.forEach((item, index, items) => {
+      item.addEventListener("click", function (event) {
+        items.forEach((item) => {
+          item.classList.remove("active");
+        });
+        event.target.classList.add("active");
       });
-      event.target.classList.add("active");
     });
-  });
+  }
 }
+
+let menu_items = [...document.getElementsByClassName("menu__item")];
+let tabs = [...document.getElementsByClassName("tabs__item")];
+
+addClickEvent(menu_items);
+addClickEvent(tabs);
