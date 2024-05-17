@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <button class="hamburger">
+            <button class="hamburger" id="menu-toggler" data-after="Home">
                 <span></span>
             </button>
             <a class="logotype" href="/">
@@ -21,7 +21,7 @@
                     <p>May the Joomla be with you</p>
                 </div>
             </a>
-            <nav class="menu">
+            <nav class="menu" id="menu">
                 <a href="#" class="menu__item active">Home</a>
                 <a href="#" class="menu__item">Features</a>
                 <a href="#" class="menu__item">Portfolio</a>
@@ -29,6 +29,16 @@
             </nav>
         </header>
         <main>
+            <section id="slider">
+                <div class="slider">
+                    <div class="slider__inner">
+                        <img src="./images/slider/image-1.png" alt="" class="slider__image">
+                        <img src="./images/slider/image-2.png" alt="" class="slider__image">
+                    </div>
+                    <button class="slider__nav slider__nav_prev">&larr;</button>
+                    <button class="slider__nav slider__nav_next">&rarr;</button>
+                </div>
+            </section>
             <section id="tabs">
                 <h1>Our projects</h1>
                 <h2>Check out other themes based on <strong>JEDI</strong></h2>
@@ -204,14 +214,14 @@
                                 1020 Chicago<br />
                                 IL 60604-2340</p>
                         </div>
-                        <div class="footer__address">
+                        <div class="footer__address hide-mobile">
                             <h5>Phone:</h5>
                             <p><a href="tel:80023456789">800-2345-6789</a></p>
                             <h5>Email:</h5>
                             <p><a href="mailto:info@demolink.org">info@demolink.org</a></p>
                         </div>
                     </div>
-                    <ul class="footer__socials">
+                    <ul class="footer__socials hide-mobile">
                         <a href="https://facebook.com" target="_blank"><img src="./images/socials/facebook.png"
                                 alt=""></a>
                         <a href="https://twitter.com" target="_blank"><img src="./images/socials/twitter.png"
@@ -221,7 +231,7 @@
                                 alt=""></a>
                     </ul>
                 </div>
-                <div class="footer__column">
+                <div class="footer__column hide-mobile">
                     <h4>Latest from the blog</h4>
                     <a class="footer__blog" href="#">
                         <img src="./images/thumbs/thumb-1.png" alt="">
@@ -245,13 +255,13 @@
                         </div>
                     </a>
                 </div>
-                <div class="footer__column">
+                <div class="footer__column hide-mobile">
                     <h4>Contact us</h4>
-                    <form action="/" method="POST" class="form">
-                        <input type="text" class="form__control form__control_error" placeholder="Your Name*:">
-                        <input type="email" class="form__control" placeholder="Your Email*:">
+                    <form action="/" method="POST" class="form" novalidate id="form">
+                        <input type="text" class="form__control" placeholder="Your Name*:" required>
+                        <input type="email" class="form__control" placeholder="Your Email*:" required>
                         <textarea class="form__control" placeholder="Message:"></textarea>
-                        <button class="button" type="button">Submit</button>
+                        <button class="button" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -261,6 +271,7 @@
         </footer>
     </div>
     <script src="./js/custom.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

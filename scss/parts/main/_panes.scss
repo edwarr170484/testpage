@@ -1,54 +1,64 @@
 #panes {
-    padding: {
-        top: 34px;
-        bottom: 85px;
-        left: 15px;
-        right: 15px;
+  padding: {
+    top: 34px;
+    bottom: 85px;
+    left: 15px;
+    right: 15px;
+  }
+
+  & h2 {
+    font: {
+      size: 40px;
+      weight: 400;
     }
 
-    & h2 {
-        font: {
-            size: 40px;
-            weight: 400;
-        }
-
-        line-height: 48px;
-        text-align: center;
-    }
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .panes {
-    display: grid;
-    column-gap: 34px;
-    row-gap: 62px;
-    grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: calc(25% - 34px);
 
-        & img {
-            margin-bottom: 9px;
-        }
-
-        & h3 {
-            margin-bottom: 10px;
-
-            font: {
-                size: 24px;
-            }
-
-            line-height: 36px;
-            text-transform: uppercase;
-        }
-
-        & p {
-            font: {
-                size: 16px;
-            }
-
-            line-height: 24px;
-        }
+    @include respond-to(lg) {
+      flex-basis: calc(33% - 34px);
     }
+
+    @include respond-to(md) {
+      flex-basis: 100%;
+    }
+
+    & img {
+      margin-bottom: 9px;
+    }
+
+    & h3 {
+      margin-bottom: 10px;
+
+      font: {
+        size: 24px;
+      }
+
+      line-height: 36px;
+      text-transform: uppercase;
+    }
+
+    & p {
+      font: {
+        size: 16px;
+      }
+
+      line-height: 24px;
+    }
+  }
 }

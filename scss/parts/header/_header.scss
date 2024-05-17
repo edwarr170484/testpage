@@ -3,4 +3,11 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 22px 77px;
+  position: relative;
+
+  @include respond-to(md) {
+    flex-direction: column;
+    padding: 18px 16px;
+    gap: 20px;
+  }
 }

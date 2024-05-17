@@ -1,0 +1,45 @@
+.slider {
+  position: relative;
+
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s linear;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+
+    &_prev {
+      left: 10px;
+    }
+
+    &_next {
+      right: 10px;
+    }
+  }
+}

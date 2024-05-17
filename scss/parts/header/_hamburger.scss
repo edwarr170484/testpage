@@ -13,6 +13,7 @@
   height: 35px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   & span {
     @extend .line;
@@ -40,6 +41,23 @@
 
     @include respond-to(md) {
       display: block;
+    }
+  }
+
+  @include respond-to(md) {
+    align-self: flex-start;
+    position: relative;
+    &:after {
+      content: attr(data-after);
+      display: block;
+      font: {
+        size: 25px;
+        weight: 400;
+      }
+      line-height: 35px;
+      position: absolute;
+      left: 36px;
+      top: -7px;
     }
   }
 }
